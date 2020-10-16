@@ -1,8 +1,8 @@
 ### ASDT
 
- [Ch1. Programming Paradigm.pdf](Course/ASDT/Ch1. Programming Paradigm.pdf) 
+ [Ch1. Programming Paradigm](Course/ASDT/Ch1. Programming Paradigm.pdf) 
 
 ### TA
 
- [Lab 2.pptx](Course/TA/Lab 2.pptx) 
+ [Lab 2](Course/TA/Lab 2.pptx) 
 
