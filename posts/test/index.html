@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-	<meta name="generator" content="Hugo 0.79.0" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,16 +8,19 @@
 	
 	
 	
-	<title>Siaoyeu  </title>
+	<title>Unsupervised anomaly detection via variational auto-encoder for seasonal KPIs in web applications ｜ Siaoyeu</title>
 	
     
     
+    <meta name="description" content="n" />
+    
 
+    
+    
+    <meta name="keywords" content="VAE" />
     
 
 	
-	<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Siaoyeu" />
-    
     
     <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
 
@@ -100,48 +102,51 @@
     </div>
 </div>
         <div class="content">
-            
-
-<div class="post animated fadeInDown">
-    <div class="post_title">
-        <h2><a href='/posts/test/'>Unsupervised anomaly detection via variational auto-encoder for seasonal KPIs in web applications</a></h2>
-    </div>
-    
-    <div class="list">
-        <div class="post_content markdown">
-            <p>Unsupervised anomaly detection via variational auto-encoder for seasonal KPIs in web applications Xu et al., WWW’18
-(If you don’t have ACM Digital Library access, the paper can be accessed either by following the link above directly from The Morning Paper blog site, or from the WWW 2018 proceedings page).
-Today’s paper examines the problem of anomaly detection for web application KPIs (e.g. page views, number of orders), studied in the context of a ‘top global Internet company’ which we can reasonably assume to be Alibaba.
- Among all KPIs, the most (important?) ones are business-related KPIs, which are heavily influenced by user behaviour and schedule, thus roughly have seasonal patterns occurring at regular intervals (e.......</p>
-        </div>
-    </div>
-    
-    <div class="post_footer">
-        <div class="meta">
-            <div class="info">
-                <span class="field">
-                    <i class="ri-map-pin-time-line"></i>
-                    <span class="date">2020.12.12</span>
-                </span>
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/test/'>Unsupervised anomaly detection via variational auto-encoder for seasonal KPIs in web applications</a></h2>
+                        <span class="date">2020.12.12</span>
+                    </div>
+                    <div class="post_content markdown"><p><a href="https://dl.acm.org/citation.cfm?id=3185996">Unsupervised anomaly detection via variational auto-encoder for seasonal KPIs in web applications</a> Xu et al., <em>WWW’18</em></p>
+<p>(<em>If you don’t have ACM Digital Library access, the paper can be accessed either by following the link above directly from The Morning Paper blog site, or from the <a href="https://www2018.thewebconf.org/proceedings/">WWW 2018 proceedings</a> page</em>).</p>
+<p>Today’s paper examines the problem of anomaly detection for web application KPIs (e.g. page views, number of orders), studied in the context of a ‘top global Internet company’ which we can reasonably assume to be Alibaba.</p>
+<blockquote>
+<p>Among all KPIs, the most (important?) ones are business-related KPIs, which are heavily influenced by user behaviour and schedule, thus roughly have seasonal patterns occurring at regular intervals (e.g., daily and/or weekly). However, anomaly detection for these seasonal KPIs with various patterns and data quality has been a great challenge, especially without labels.</p>
+</blockquote>
+<p><em>Donut</em> is an unsupervised anomaly detection algorithm based on Variational Auto-Encoding (VAE). It uses three techniques (modified ELBO, missing data injection, and MCMC imputation), which together add up to state-of-the-art anomaly detection performance. One of the interesting findings in the research is that it is important to train on both normal data <em>and abnormal data</em>, contrary to common intuition.</p>
+<h3 id="the-problem">The problem</h3>
+<p>We’re interested in time series KPIs influenced by user behaviour and schedules, and thus have <em>seasonal patterns</em> (e.g. daily and/or weekly patterns). The precise shapes of the KPI curves in each cycle are not exactly the same of course, since user behaviour can vary across days.</p>
+<p>We also assume some (Gaussian) noise in the measurements. <em>Anomalies</em> are recorded points that do not follow normal patterns (e.g. spikes or dips). In additional to anomalies, there may also be <em>missing</em> data points where the monitoring system has not received any data. These points are recorded as ‘null’. Missing data points are not treated as anomalies.</p>
+<p>We want to give a real valued score for each data point, indicating the probability that it is anomalous. A threshold can then be used to flag anomalies.</p>
+<p>As part of the training set, we also have <em>occasional</em> labels where e.g. operators have annotated points. The coverage of these labels is far from what’s needed for typical supervised learning algorithms.
+$$
+test\ latex\ \frac{1}{2}
+$$</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/vae/">VAE</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
                 
-                <span class="field tags">
-                    <i class="ri-stack-line"></i>
-                    
-                    <a href="http://localhost:1313/tags/vae/">VAE</a>
-                    
-                </span>
+                
+                <div class="doc_comments"></div>
                 
             </div>
         </div>
     </div>
-</div>
-
-
-<div class="pagination">
-    
-</div>
-        </div>
-    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
     <footer class="footer">
     <div class="powered_by">
         <a href="https://varkai.com">Designed by VarKai,</a>
