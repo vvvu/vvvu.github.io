@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Siaoyeu</title>
-    <link>vvvu.github.io/</link>
-    <description>Recent content on Siaoyeu</description>
+    <title></title>
+    <link>http://example.org/</link>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 12 Dec 2020 17:55:23 +0800</lastBuildDate><atom:link href="vvvu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Unsupervised anomaly detection via variational auto-encoder for seasonal KPIs in web applications</title>
-      <link>vvvu.github.io/posts/test/</link>
-      <pubDate>Sat, 12 Dec 2020 17:55:23 +0800</pubDate>
-      
-      <guid>vvvu.github.io/posts/test/</guid>
-      <description>Unsupervised anomaly detection via variational auto-encoder for seasonal KPIs in web applications Xu et al., WWW’18
-(If you don’t have ACM Digital Library access, the paper can be accessed either by following the link above directly from The Morning Paper blog site, or from the WWW 2018 proceedings page).
-Today’s paper examines the problem of anomaly detection for web application KPIs (e.g. page views, number of orders), studied in the context of a ‘top global Internet company’ which we can reasonably assume to be Alibaba.
- Among all KPIs, the most (important?) ones are business-related KPIs, which are heavily influenced by user behaviour and schedule, thus roughly have seasonal patterns occurring at regular intervals (e.</description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>vvvu.github.io/about/</link>
-      <pubDate>Sat, 29 Dec 2018 20:24:28 +0800</pubDate>
-      
-      <guid>vvvu.github.io/about/</guid>
-      <description>Hugo 官方主页: https://gohugo.io/ Hugo的安装方式有两种，一种是直接下载编译好的Hugo二进制文件。如果只是使用Hugo推荐用这种方式。另一种方式是获取Hugo的源码，自己编译。由于各种不可预料的网络问题，第二种方式不</description>
-    </item>
-    
+    <language>en</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
